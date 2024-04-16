@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+nav {
+    position: fixed;
+    width: 100vw;
+    border-bottom: 0.5px solid #f3f3f34d;
+    background: #232323;
+}
+
+.navbar-nav {
+    margin-right: 32px;
+}
+
+.toggle {
+    position: relative;
+    top: 6.4px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 24px;
+    font-size: calc(9.6px + .5vw);
+    text-align: center;
+}
+
+.nav-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: #f3f3f3;
+}
+
+.navbar-brand span {
+    color: #D49BB0;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    border-radius: 2px;
+    background: #21aaaa;
+    background: -webkit-linear-gradient(to right, #D49BB0, #21aaaa);
+    background: linear-gradient(to right, #D49BB0, #21aaaa);
+    transition: 0.4s ease;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: calc(8px + .4vw);
+}
+
+.navbar li a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.nav_container {
+    transition: all .3s;
+}
+
+
+@media screen and (max-width: 992px) {
+    .nav-item:hover::before {
+        width: 0%;
+    }
+}

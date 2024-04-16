@@ -1,0 +1,10 @@
+{
+    "label.navbar.home": "Home",
+    "label.navbar.aboutMe": "About Me",
+    "label.navbar.contact": "Contact",
+    "label.navbar.projects": "Projects",
+    "label.home.title": "Hi, my name is Miguel",
+    "label.home.gradient.dev": "I am a {Front-End Developer}",
+    "label.home.gradient.opportunity": "I am seeking an opportunity",
+    "label.home.gradient.welcome": "Welcome to my portfolio"
+}

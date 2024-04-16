@@ -1,0 +1,10 @@
+{
+    "label.navbar.home": "Inicio",
+    "label.navbar.aboutMe": "Sobre mí",
+    "label.navbar.contact": "Contacto",
+    "label.navbar.projects": "Proyectos",
+    "label.home.title": "Hola, mi nombre es Miguel",
+    "label.home.gradient.dev": "Soy {Desarrollador Front-End}",
+    "label.home.gradient.opportunity": "Busco una oportunidad",
+    "label.home.gradient.welcome": "Bienvenidos a mi portafolio"
+}

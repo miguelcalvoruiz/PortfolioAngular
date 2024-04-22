@@ -32,7 +32,7 @@ nav {
 }
 
 .navbar-brand span {
-    color: #D49BB0;
+    color: #7bfb92;
 }
 
 .nav-item::before {
@@ -43,9 +43,9 @@ nav {
     height: 2px;
     width: 0;
     border-radius: 2px;
-    background: #21aaaa;
-    background: -webkit-linear-gradient(to right, #D49BB0, #21aaaa);
-    background: linear-gradient(to right, #D49BB0, #21aaaa);
+    background: #7bfb92;
+    background: -webkit-linear-gradient(to right,  #7bfb92, #c15df3);
+    background: linear-gradient(to right,  #7bfb92, #c15df3);
     transition: 0.4s ease;
 }
 

@@ -14,3 +14,36 @@
   background: #313131;
   color: #f3f3f3;
 }
+
+section {
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.bar-title {
+  position: relative;
+  display: block;
+}
+
+.bar-title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  bottom: -8px;
+  background: #7bfb92;
+  background: -webkit-linear-gradient(to right, #7bfb92, #c15df3);
+  background: linear-gradient(to right, #7bfb92, #c15df3);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+}

@@ -1,5 +1,7 @@
+import { SocialNetwork } from '../../models/social-network';
+import { ConfigService } from '../../services/config/config.service';
 import { TranslateService } from './../../services/translate/translate.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   text = '';
   fullTranslatedText = '';
   words = ['label.home.gradient.dev', 'label.home.gradient.opportunity', 'label.home.gradient.welcome'];
@@ -15,8 +17,14 @@ export class HomeComponent {
   delay = 100;
   isDeleting = false;
 
-  constructor(private translateService: TranslateService) {
+  public socialNetworks: SocialNetwork[] = [];
+
+  constructor(private translateService: TranslateService, private configService: ConfigService,) {
     this.typewrite();
+  }
+
+  async ngOnInit(): Promise<void> {
+    this.socialNetworks = await this.configService.getConfigValue("data.socialNetworks");
   }
 
   typewrite() {

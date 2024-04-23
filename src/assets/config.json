@@ -251,6 +251,36 @@
                 ]
             }
         ],
+        "projects": [
+            {
+                "title": "Mr Robot",
+                "resume": "label.projects.resume.MrRobot",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/mrrobot.jpg"
+            },
+            {
+                "title": "FilmaticK",
+                "resume": "label.projects.resume.filmatick",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/filmatick.jpg"
+            },
+            {
+                "title": "Angular Puzzle Jigsaw",
+                "resume": "label.projects.resume.puzzle",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/puzzle.jpg"
+            },
+            {
+                "title": "Trello",
+                "resume": "label.projects.resume.MrRobot",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/mrrobot.jpg"
+            }
+        ],
         "config": {
             "filenameCV": "CV-Miguel-Calvo-Ruiz.pdf"
         }

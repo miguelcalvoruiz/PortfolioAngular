@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
+:root {
+  /* Main colors */
+  --highlight-green: #7bfb92;
+  --white: #f3f3f3;
+  --soft-black: rgba(0, 0, 0, 0.05);
+  --transparent-white: rgba(255, 255, 255, 0.5);
+  --very-transparent-white: rgba(255, 255, 255, 0.13);
+  --dark-gray: #444444;
+  --gray: #4c4c4c;
+  --light-gray: #c2c0c0;
+  --medium-gray: #9b9a9a;
+  --light-gray-hover: #aaa;
+  --black: black;
+  --body-background: #313131;
+  --green-purple-gradient: linear-gradient(to right, #7bfb92, #c15df3);
+  --green-purple-gradient-webkit: -webkit-linear-gradient(to right, #7bfb92, #c15df3);
+}
 
 * {
   margin: 0;
@@ -11,8 +33,8 @@
 
 .body-style {
   font-family: 'Cairo', sans-serif;
-  background: #313131;
-  color: #f3f3f3;
+  background: var(--body-background);
+  color: var(--white);
 }
 
 section {
@@ -31,7 +53,7 @@ section {
   height: 3px;
   width: 100px;
   bottom: -8px;
-  background: #7bfb92;
+  background: var(--highlight-green);
   background: -webkit-linear-gradient(to right, #7bfb92, #c15df3);
   background: linear-gradient(to right, #7bfb92, #c15df3);
 }

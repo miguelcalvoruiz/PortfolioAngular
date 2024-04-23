@@ -11,9 +11,11 @@ import { ContactComponent } from './components/contact/contact.component';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { TranslateService } from './services/translate/translate.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SwiperModule } from 'swiper/angular';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAngular, faBootstrap, faCss3Alt, faFontAwesome, faGitAlt, faGithub, faHtml5, faJava, faJs, faLinkedinIn, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faArrowsSplitUpAndLeft, faCalendarDays, faCaretRight, faDatabase, faEnvelope, faHouse, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faWindowRestore } from '@fortawesome/free-regular-svg-icons';
 
 export function translateFactory(provider: TranslateService) {
   return () => provider.getData();
@@ -34,7 +36,8 @@ export function translateFactory(provider: TranslateService) {
     AppRoutingModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SwiperModule
   ],
   providers: [
     provideClientHydration(),
@@ -50,6 +53,6 @@ export function translateFactory(provider: TranslateService) {
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faGithub, faLinkedinIn, faHouse, faEnvelope, faPhoneVolume, faCalendarDays, faCaretRight, faHtml5, faCss3Alt, faJs, faJava, faPython, faAngular, faBootstrap, faFontAwesome, faDatabase, faGitAlt, faArrowsSplitUpAndLeft);
+    library.addIcons(faGithub, faLinkedinIn, faHouse, faEnvelope, faPhoneVolume, faCalendarDays, faCaretRight, faHtml5, faCss3Alt, faJs, faJava, faPython, faAngular, faBootstrap, faFontAwesome, faDatabase, faGitAlt, faArrowsSplitUpAndLeft, faWindowRestore);
   }
 }

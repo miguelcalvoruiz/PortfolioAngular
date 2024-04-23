@@ -22,7 +22,7 @@ export class AboutMeComponent implements OnInit {
   showModal = false;
   selectedExperience: any = null;
 
-  constructor(private configService: ConfigService,) {
+  constructor(private configService: ConfigService) {
   }
 
   async ngOnInit(): Promise<void> {

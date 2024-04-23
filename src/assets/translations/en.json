@@ -41,5 +41,9 @@
     "label.skills.methodology": "Methodologies",
     "label.skills.programming-languages": "Programming Languages",
     "label.skills.style-library": "Style Libraries",
-    "label.skills.version-control": "Version Control"
+    "label.skills.version-control": "Version Control",
+    "label.projects.title": "Projects",
+    "label.projects.resume.MrRobot": "Mr. Robot is my first major project, developed as part of my end-of-cycle assignment where I achieved a high distinction. This thrilling 2D platformer with pixel art style, crafted in Unity 2019, follows the main character as they strive to reach an outlet in each level. To succeed, they gather pieces and batteries to maintain energy while encountering challenges of varying difficulty.",
+    "label.projects.resume.filmatick": "FilmaticK is an ongoing project I've dedicated significant time to in support of my education. Developed in Angular and .Net, it's an ambitious Fullstack project. The platform serves as a cinematic encyclopedia where users can keep a film journal, vote on movies, and create personalized lists.",
+    "label.projects.resume.puzzle": "Angular Puzzle is a jigsaw-style puzzle developed in Angular. I initially created it as part of a gift, but it turned into a personal challenge. After realizing the scarcity of similar examples online, I decided to deploy and refine it further. This uniqueness motivated me to create an elegant and beautiful website dedicated to the game."
 }

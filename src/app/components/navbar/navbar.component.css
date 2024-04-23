@@ -28,11 +28,11 @@ nav {
 .nav-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 32px;
-    color: #f3f3f3;
+    color: var(--white);
 }
 
 .navbar-brand span {
-    color: #7bfb92;
+    color: var(--highlight-green);
 }
 
 .nav-item::before {
@@ -43,7 +43,7 @@ nav {
     height: 2px;
     width: 0;
     border-radius: 2px;
-    background: #7bfb92;
+    background: var(--highlight-green);
     background: -webkit-linear-gradient(to right,  #7bfb92, #c15df3);
     background: linear-gradient(to right,  #7bfb92, #c15df3);
     transition: 0.4s ease;
@@ -63,7 +63,7 @@ nav {
 }
 
 .navbar li a {
-    color: #f3f3f3;
+    color: var(--white);
     text-decoration: none;
 }
 

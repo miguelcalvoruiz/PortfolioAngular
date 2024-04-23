@@ -15,7 +15,7 @@
 .about-title {
     font-weight: 700;
     font-size: 30px;
-    color: #7bfb92;
+    color: var(--highlight-green);
 }
 
 .font {
@@ -36,10 +36,10 @@
 
 .icons-data {
     font-size: calc(8px + .5vw);
-    color: #7bfb92;
+    color: var(--highlight-green);
     width: 30px;
     height: 30px;
-    background: #444444;
+    background: var(--dark-gray);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -65,9 +65,9 @@
     flex-direction: row;
     min-height: 130px;
     list-style: none;
-    background: rgba(255, 255, 255, 0.13);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
+    border: 1px solid var(--transparent-white);
     margin: 1em 0;
     transition: all .3s;
 }
@@ -102,24 +102,24 @@
 .info-experience h3 {
     font-size: calc(18px + 0.5vw);
     margin-bottom: 5px;
-    color: #7bfb92;
+    color: var(--highlight-green);
 }
 
 .studies-card-content h3 {
     font-size: calc(10px + 0.5vw);
     margin-bottom: 5px;
-    color: #7bfb92;
+    color: var(--highlight-green);
 }
 
 .school {
-    color: #f3f3f3;
+    color: var(--white);
     font-size: calc(8px + 0.5vw);
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 .company {
-    color: #f3f3f3;
+    color: var(--white);
     font-size: calc(12px + 0.5vw);
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -127,14 +127,14 @@
 
 .location,
 .model {
-    color: #c2c0c0;
+    color: var(--light-gray);
     font-size: calc(7px + 0.5vw);
     margin-bottom: 5px;
 }
 
 .more {
     text-decoration: none;
-    color: #9b9a9a;
+    color: var(--medium-gray);
     font-size: calc(0.5em + 0.4vw);
     display: flex;
     align-items: center;
@@ -149,7 +149,7 @@
 .date,
 .date-experience {
     font-size: calc(7px + 0.5vw);
-    color: #f3f3f3;
+    color: var(--white);
     margin-bottom: 10px;
 }
 
@@ -170,11 +170,11 @@
 }
 
 .skills-content {
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--transparent-white);
     padding: 2rem 3rem;
     border-radius: 1.25rem;
-    background: rgba(255, 255, 255, 0.13);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
     margin-bottom: 1em;
 }
 
@@ -186,7 +186,7 @@
     font-weight: 200;
     text-align: center;
     margin-bottom: 1em;
-    color: #7bfb92;
+    color: var(--highlight-green);
 }
 
 .skills-data {
@@ -202,7 +202,7 @@
 }
 
 .skill-icon {
-    color: #7bfb92;
+    color: var(--highlight-green);
 }
 
 .modal {
@@ -219,13 +219,13 @@
 }
 
 .modal-content {
-    background-color: #4c4c4c;
+    background-color: var(--gray);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 35px var(--soft-black);
 }
 
 .button-container {
@@ -234,7 +234,7 @@
 }
 
 .close {
-    color: #aaa;
+    color: var(--light-gray-hover);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -277,7 +277,7 @@
     }
 
     .modal-content {
-        background-color: #4c4c4c;
+        background-color: var(--gray);
         margin: 25% 5% auto;
         height: 80%;
         overflow: inherit;

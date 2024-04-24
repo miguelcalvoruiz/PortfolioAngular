@@ -5,7 +5,6 @@
 
 
 :root {
-  /* Main colors */
   --highlight-green: #7bfb92;
   --white: #f3f3f3;
   --soft-black: rgba(0, 0, 0, 0.05);
@@ -17,6 +16,10 @@
   --medium-gray: #9b9a9a;
   --light-gray-hover: #aaa;
   --black: black;
+  --nav-background: #232323;
+  --home-background: rgba(177, 176, 176, 0.102);
+  --button-linkedin-background: #0077b5;
+  --button-github-background: #c15df3;
   --body-background: #313131;
   --green-purple-gradient: linear-gradient(to right, #7bfb92, #c15df3);
   --green-purple-gradient-webkit: -webkit-linear-gradient(to right, #7bfb92, #c15df3);

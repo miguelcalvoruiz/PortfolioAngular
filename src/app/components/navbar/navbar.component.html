@@ -1,25 +1,17 @@
 <nav class="navbar navbar-expand-lg nav sticky-top fixed">
     <div class="container-fluid nav_container">
-        <a [routerLink]="[ '/home' ]" class="nav-logo navbar-brand"><span>M</span>iguel <span>C</span>alvo <span>R</span>uiz</a>
+        <a [routerLink]="[ '/home' ]" class="nav-logo navbar-brand">
+            <span>M</span>iguel <span>C</span>alvo <span>R</span>uiz
+        </a>
         <button style="background-color: var(--white)" class="navbar-toggler shadow-none me-3" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+            (click)="isMenuOpen = !isMenuOpen" aria-label="Toggle navigation">
             <i class="navbar-toggler-icon nav-toggle-icon nav_link"></i>
         </button>
-        <div #navMenu class="nav_menu_collapse collapse navbar-collapse justify-content-end"
+        <div [class.collapse]="!isMenuOpen" class="nav_menu_collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent">
-            <ul class="navbar-nav mb-4 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="[ '/home' ]">{{'label.navbar.home' | translate}}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/aboutMe']">{{'label.navbar.aboutMe' | translate}}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/projects']">{{'label.navbar.projects' | translate}}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/contact']">{{'label.navbar.contact' | translate}}</a>
+            <ul class="navbar-nav mb-lg-0">
+                <li class="nav-item" *ngFor="let link of navLinks">
+                    <a class="nav-link" [routerLink]="[ link.url ]" (click)="isMenuOpen = false">{{ link.label | translate }}</a>
                 </li>
             </ul>
         </div>

@@ -6,25 +6,25 @@
     background-size: cover;
     background-position: center;
     background-image: url('/assets/img/home-bg.svg');
-  }
-  
-  .text {
+}
+
+.text {
     text-align: center;
-  }
-  
-  .button-container {
+}
+
+.button-container {
     display: flex;
     justify-content: center;
-  }
-  
-  .button {
+}
+
+.button {
     width: 50px;
     height: 50px;
     padding: 8px 12px;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     border-radius: 20%;
     background: transparent;
-    color: white;
+    color: var(--white);
     font-size: 24px;
     cursor: pointer;
     text-decoration: none;
@@ -35,34 +35,37 @@
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
-  }
-  
-  
-  
-  .button:hover {
+}
+
+.button:hover {
     transform: translateY(-5px);
-    border-color: #fff;
-  }
+    border-color: var(--white);
+}
 
-  .button.linkedin:hover {
-    background-color: #0077b5;
-  }
+.button.linkedin:hover {
+    background-color: var(--button-linkedin-background);
+}
 
-  .button.github:hover {
-    background-color: #6e5494;
-  }
-  
-  @media only screen and (max-width: 400px) {
+.button.github:hover {
+    background-color: var(--button-github-background);
+}
+
+@media only screen and (max-width: 400px) {
     .home-title {
-      font-size: 4.5vw;
+        font-size: 4.5vw;
     }
-  
+
     #typewriter {
-      font-size: 3.5vw;
+        font-size: 3.5vw;
     }
-  
+
     .button-container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
-  
+}
+
+@media only screen and (max-width: 540px) {
+    .home {
+        background-image: url('/assets/img/home-bg-mobile.svg');
+    }
+}

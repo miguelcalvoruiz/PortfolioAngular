@@ -11,4 +11,12 @@ export class NavbarComponent {
 
   }
 
+  isMenuOpen = false;
+  navLinks = [
+    { label: 'label.navbar.home', url: '/home' },
+    { label: 'label.navbar.aboutMe', url: '/aboutMe' },
+    { label: 'label.navbar.projects', url: '/projects' },
+    { label: 'label.navbar.contact', url: '/contact' }
+  ];
+
 }

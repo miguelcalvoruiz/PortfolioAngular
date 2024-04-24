@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit{
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-    speed: 2000,
+    speed: 1000,
     breakpoints: {
       400: {
         slidesPerView: 1,

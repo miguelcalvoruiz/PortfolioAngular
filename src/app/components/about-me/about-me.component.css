@@ -30,7 +30,7 @@
 
 .email,
 .phone {
-    color: white;
+    color: var(--white);
     text-decoration: underline;
 }
 
@@ -215,14 +215,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--soft-black);
 }
 
 .modal-content {
     background-color: var(--gray);
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--light-gray-hover);
     width: 80%;
     border-radius: 20px;
     box-shadow: 0 15px 35px var(--soft-black);

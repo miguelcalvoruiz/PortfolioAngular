@@ -3,8 +3,8 @@
 nav {
     position: fixed;
     width: 100vw;
-    border-bottom: 0.5px solid #f3f3f34d;
-    background: #232323;
+    border-bottom: 0.5px solid var(--transparent-white);
+    background: var(--nav-background);
 }
 
 .navbar-nav {
@@ -44,8 +44,8 @@ nav {
     width: 0;
     border-radius: 2px;
     background: var(--highlight-green);
-    background: -webkit-linear-gradient(to right,  #7bfb92, #c15df3);
-    background: linear-gradient(to right,  #7bfb92, #c15df3);
+    background: -webkit-linear-gradient(to right, #7bfb92, #c15df3);
+    background: linear-gradient(to right, #7bfb92, #c15df3);
     transition: 0.4s ease;
 }
 
@@ -73,7 +73,16 @@ nav {
 
 
 @media screen and (max-width: 992px) {
-    .nav-item:hover::before {
-        width: 0%;
+    .navbar-nav {
+        margin-right: 0px;
+    }
+
+    .nav_menu_collapse {
+        border-top: 1px solid var(--transparent-white);
+    }
+
+    .nav_menu_collapse .nav-item {
+        margin-left: 0;
+        padding: 10px 20px;
     }
 }

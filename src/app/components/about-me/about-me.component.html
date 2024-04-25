@@ -19,7 +19,7 @@
                                 <fa-icon class="icons-data" [icon]="['fas', pd.icon]"></fa-icon>
                                 <strong>
                                     <a *ngIf="pd.link" href="{{pd.link}}" class="{{pd.name}}">{{pd.data}}</a>
-                                    <span *ngIf="!pd.link" class="{{pd.name}}">{{pd.data}}</span>
+                                    <span *ngIf="!pd.link" class="{{pd.name}}">{{pd.data | translate}}</span>
                                 </strong>
                             </li>
                         </ul>

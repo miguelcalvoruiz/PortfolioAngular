@@ -1,0 +1,241 @@
+section {
+    padding-top: 100px;
+}
+
+.contact-data {
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
+    border-radius: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.info-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--highlight-green);
+    padding: 4%;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.ul-dir-email-phone {
+    list-style-type: none;
+    font-size: 1em;
+    display: grid;
+    justify-items: start;
+    color: var(--gray);
+    margin-bottom: -3em;
+}
+
+.email,
+.phone {
+    color: var(--gray);
+    text-decoration: underline;
+}
+
+.icons-data {
+    font-size: calc(8px + .5vw);
+    color: var(--purple);
+    width: 30px;
+    height: 30px;
+    background: var(--dark-gray);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    margin-right: 10px;
+    margin-bottom: .2em;
+}
+
+.profile-info {
+    text-align: center;
+    margin-bottom: 6em;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px var(--soft-black);
+}
+
+.profile-name {
+    font-size: 40px;
+    color: var(--gray);
+}
+
+.profile-description {
+    font-size: 1em;
+    color: var(--gray);
+    margin-bottom: 2em;
+}
+
+.form-col {
+    padding: 3%;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.form-contact label {
+    font-weight: 600;
+    font-size: calc(.6em + .3vw);
+}
+
+.form-contact input {
+    font-size: calc(.6em + .3vw);
+    margin-bottom: 10px;
+}
+
+.button {
+    font-size: calc(.6em + .5vw);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5em;
+    background-color: #7f88be;
+    color: #f3f3f3f3;
+    padding: .75em 1.4em;
+    border-radius: .25em;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    margin-top: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.button[disabled] {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.button:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: center;
+    background-color: #7f88be;
+    color: #f3f3f3f3;
+    z-index: -1;
+    border-radius: .25em;
+    transition: .2s;
+}
+
+.button:hover:not([disabled]) {
+    background: linear-gradient(to right, #7bfb92, #c15df3);
+    transition: background 0.4s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover:not([disabled])::before {
+    transform: scale(1);
+    color: #f3f3f3f3;
+    background: var(--highlight-green);
+    background: -webkit-linear-gradient(to right, #7bfb92, #c15df3);
+    background: linear-gradient(to right, #7bfb92, #c15df3);
+    transition: .4s ease;
+}
+
+.button:hover {
+    background-color: #6a75a4;
+}
+
+.alert-dismissible {
+    position: relative;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.progress {
+    margin-bottom: -20px;
+}
+
+.alert {
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .profile-info {
+        margin-bottom: 3em;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 30px;
+    }
+
+    .profile-description {
+        margin-bottom: 1.5em;
+    }
+
+    .ul-dir-email-phone {
+        font-size: 12px;
+    }
+
+    .icons-data {
+        font-size: calc(7px + .5vw);
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-col {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 1.5em;
+    }
+
+    .contact-data {
+        margin: 0px 5px 1em;
+    }
+
+    .form-col {
+        margin-bottom: 25px;
+    }
+
+    .alert {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 768px) {
+    .ul-dir-email-phone {
+        padding-left: 0em;
+        font-size: 10px;
+    }
+
+    .profile-info {
+        margin-bottom: 1em;
+    }
+}

@@ -19,7 +19,7 @@
                 "name": "dir",
                 "delay": "100",
                 "icon": "house",
-                "data": "Pola de Laviana, Asturias, España"
+                "data": "label.personal.data.direction"
             },
             {
                 "name": "email",
@@ -282,7 +282,10 @@
             }
         ],
         "config": {
-            "filenameCV": "CV-Miguel-Calvo-Ruiz.pdf"
+            "filenameCV": "CV-Miguel-Calvo-Ruiz.pdf",
+            "serviceID": "service_n4mpyjw",
+            "templateID": "template_4xosmer",
+            "userID": "1uWbbOo0LVF1DXLup"
         }
     }
 }

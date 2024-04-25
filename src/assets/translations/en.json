@@ -12,6 +12,7 @@
     "label.about.section.title.studies": "Studies",
     "label.about.section.title.courses": "Courses",
     "label.about.section.title.skills": "Skills",
+    "label.personal.data.direction": "Pola de Laviana, Asturias, Spain",
     "label.about.about.title": "Web Developer",
     "label.about.about.bio1": "I am a very curious person passionate about new technologies. I am always seeking to learn and grow in my field. As a Front-end developer, I have worked with technologies such as Angular and .Net, which has allowed me to face various challenges and expand my knowledge. I am a pleasant and committed person in work environments; I enjoy working in teams and contributing creative ideas that help achieve the proposed objectives. I firmly believe that teamwork is fundamental for success in any project. I am always willing to listen to new ideas and points of view, and I consider communication to be key to moving forward with any project.",
     "label.about.about.bio2": "After dedicating several months to training and specializing my knowledge, I am looking for the opportunity to join a company. I am motivated to contribute to ambitious projects, bringing my energy and my ability to work as part of a team.",
@@ -45,5 +46,14 @@
     "label.projects.title": "Projects",
     "label.projects.resume.MrRobot": "Mr. Robot is my first major project, developed as part of my end-of-cycle assignment where I achieved a high distinction. This thrilling 2D platformer with pixel art style, crafted in Unity 2019, follows the main character as they strive to reach an outlet in each level. To succeed, they gather pieces and batteries to maintain energy while encountering challenges of varying difficulty.",
     "label.projects.resume.filmatick": "FilmaticK is an ongoing project I've dedicated significant time to in support of my education. Developed in Angular and .Net, it's an ambitious Fullstack project. The platform serves as a cinematic encyclopedia where users can keep a film journal, vote on movies, and create personalized lists.",
-    "label.projects.resume.puzzle": "Angular Puzzle is a jigsaw-style puzzle developed in Angular. I initially created it as part of a gift, but it turned into a personal challenge. After realizing the scarcity of similar examples online, I decided to deploy and refine it further. This uniqueness motivated me to create an elegant and beautiful website dedicated to the game."
+    "label.projects.resume.puzzle": "Angular Puzzle is a jigsaw-style puzzle developed in Angular. I initially created it as part of a gift, but it turned into a personal challenge. After realizing the scarcity of similar examples online, I decided to deploy and refine it further. This uniqueness motivated me to create an elegant and beautiful website dedicated to the game.",
+    "label.contact.title": "Contact",
+    "label.contact.name": "Name",
+    "label.contact.email": "Email",
+    "label.contact.company": "Company",
+    "label.contact.message": "Message",
+    "label.contact.button.send": "Send Message",
+    "label.contact.success": "Message sent successfully",
+    "label.contact.error": "An error occurred while sending the email",
+    "label.contact.description": "Frontend Developer"
 }

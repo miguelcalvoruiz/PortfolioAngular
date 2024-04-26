@@ -1,0 +1,31 @@
+<section class="projects first-section">
+    <div data-aos="zoom-in-up" class="container">
+        <h2 class="bar-title"><strong>{{ 'label.projects.title' | translate }}</strong></h2>
+    </div>
+    <div data-aos="fade-up-left" class="projects-cards-container">
+        <swiper class="project_cards my-swiper my_swiper" [config]="config"
+            style="--swiper-navigation-color: var(--white);--swiper-pagination-color: var(--highlight-green)">
+            <ng-template *ngFor="let project of projects" swiperSlide class="swiper_slide swiper-slide">
+                <div class="project-card" (mouseenter)="showDescription(project.resume)" (mouseleave)="hideDescription()">
+                    <div class="project-card-header">
+                        <img [src]="project.thumbnail">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="title">{{project.title}}</h3>
+                        <div class="button-container">
+                            <a href="{{project.linkGitHub}}" class="button" target="_blank">
+                                <fa-icon [icon]="['fab', 'github']"></fa-icon>
+                            </a>
+                            <a href="{{project.link}}" class="button" target="_blank">
+                                <fa-icon [icon]="['far', 'window-restore']"></fa-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
+        <div *ngIf="activeProjectDescription" class="description-container">
+            {{ activeProjectDescription | translate }}
+        </div>
+    </div>
+</section>

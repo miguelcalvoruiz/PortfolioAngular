@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg nav sticky-top fixed">
+    <div class="container-fluid nav_container">
+        <a [routerLink]="[ '/home' ]" class="nav-logo navbar-brand">
+            <span>M</span>iguel <span>C</span>alvo <span>R</span>uiz
+        </a>
+        <button style="background-color: var(--white)" class="navbar-toggler shadow-none me-3" type="button"
+            (click)="isMenuOpen = !isMenuOpen" aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon nav-toggle-icon nav_link"></i>
+        </button>
+        <div [class.collapse]="!isMenuOpen" class="nav_menu_collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0">
+                <li class="nav-item" *ngFor="let link of navLinks">
+                    <a class="nav-link" [routerLink]="[ link.url ]" (click)="isMenuOpen = false">{{ link.label | translate }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,27 @@
+<section id="home" class="home">
+    <div data-aos="fade-right" class="home-container container">
+        <div class="text">
+            <div class="home-data">
+                <h1 data-aos="fade-right" data-aos-delay="100" class="h1 home-title">{{'label.home.title' | translate}}</h1>
+                <div id="typewriter">
+                    <p>&nbsp;<span class="gradient-text">{{text | translate}}</span></p>
+                </div>
+            </div>
+            <div class="button-group">
+                <div class="button-container">
+                    <a href="{{sn.link}}" class="button {{sn.name}}" data-aos="fade-right"
+                        data-aos-delay="100" target="_blank" *ngFor="let sn of socialNetworks">
+                        <fa-icon [icon]="['fab', sn.icon]"></fa-icon>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a href="{{fileCV}}" class="button-cv" data-aos="fade-up"
+                        data-aos-delay="300" target="_blank" download>
+                        {{ "label.home.download" | translate }}
+                        <fa-icon [icon]="['fas', 'file']"></fa-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

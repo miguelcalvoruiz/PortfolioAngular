@@ -1,0 +1,291 @@
+{
+    "data": {
+        "imgProfile": "assets/img/fotoCV.jpeg",
+        "name": "Miguel Calvo Ruiz",
+        "fileCV": "assets/pdf/Miguel-Calvo-Ruiz-CV.pdf",
+        "socialNetworks": [
+            {
+                "name": "linkedin",
+                "icon": "linkedin-in",
+                "link": "https://www.linkedin.com/in/miguel-calvo-ruiz-4b0672187/"
+            },
+            {
+                "name": "github",
+                "icon": "github",
+                "link": "https://github.com/miguelcalvoruiz"
+            }
+        ],
+        "personalData": [
+            {
+                "name": "dir",
+                "delay": "100",
+                "icon": "house",
+                "data": "label.personal.data.direction"
+            },
+            {
+                "name": "email",
+                "delay": "300",
+                "icon": "envelope",
+                "link": "https://mail.google.com/mail/?view=cm&fs=1&to=miguelcalvoruiz6@gmail.com",
+                "data": "miguelcalvoruiz6@gmail.com"
+            },
+            {
+                "name": "phone",
+                "delay": "500",
+                "icon": "phone-volume",
+                "link": "tel:+34676865299",
+                "data": "+34 676 86 52 99"
+            }
+        ],
+        "studies": [
+            {
+                "range": "label.about.studies.school.jjcm.range",
+                "school": "label.about.studies.school.jjcm",
+                "title": "label.about.studies.school.jjcm.title",
+                "img": "assets/img/studies/jjcm.jpg"
+            },
+            {
+                "range": "label.about.studies.school.uniovi.range",
+                "school": "label.about.studies.school.uniovi",
+                "title": "label.about.studies.school.uniovi.title",
+                "img": "assets/img/studies/uniovi.jpg"
+            }
+        ],
+        "courses": [
+            {
+                "year": "2023",
+                "title": "label.about.courses.title.angular-aspnet",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2023",
+                "title": "label.about.courses.title.angularjs",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2023",
+                "title": "label.about.courses.title.net",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2022",
+                "title": "label.about.courses.title.test-unit",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2022",
+                "title": "label.about.courses.title.marketing",
+                "school": "Google Garage Digital",
+                "img": "assets/img/courses/gdg.jpg"
+            },
+            {
+                "year": "2020",
+                "title": "label.about.courses.title.unity",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2020",
+                "title": "label.about.courses.title.angular8",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2020",
+                "title": "label.about.courses.title.security",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2020",
+                "title": "label.about.courses.title.hacking",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2020",
+                "title": "label.about.courses.title.python",
+                "school": "Itoo",
+                "img": "assets/img/courses/itoo.jpg"
+            }
+        ],
+        "experiences": [
+            {
+                "range": "label.about.experiences.clarcat.range",
+                "company": "Clarcat Cantabrico",
+                "model": "label.about.experiences.hybrid",
+                "place": "Asturias",
+                "position": "label.about.experiences.front.end.programmer",
+                "description": "label.about.experiences.clarcat.task",
+                "img": "assets/img/experience/clarcat.jpg"
+            }
+        ],
+        "skills": [
+            {
+                "group": "programming-languages",
+                "skills": [
+                    {
+                        "name": "Typescript",
+                        "icon": "caret-right",
+                        "iconType": "fas",
+                        "years": "5"
+                    },
+                    {
+                        "name": "HTML",
+                        "icon": "html5",
+                        "iconType": "fab",
+                        "years": "6"
+                    },
+                    {
+                        "name": "CSS",
+                        "icon": "css3-alt",
+                        "iconType": "fab",
+                        "years": "6"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "icon": "js",
+                        "iconType": "fab",
+                        "years": "1"
+                    },
+                    {
+                        "name": "ASP .NET Core",
+                        "icon": "caret-right",
+                        "iconType": "fas",
+                        "years": "3"
+                    },
+                    {
+                        "name": "Java",
+                        "icon": "java",
+                        "iconType": "fab",
+                        "years": "4"
+                    },
+                    {
+                        "name": "Python",
+                        "icon": "python",
+                        "iconType": "fab",
+                        "years": "1"
+                    }
+                ]
+            },
+            {
+                "group": "frameworks",
+                "skills": [
+                    {
+                        "name": "Angular",
+                        "icon": "angular",
+                        "iconType": "fab",
+                        "years": "5"
+                    },
+                    {
+                        "name": "Angular JS",
+                        "icon": "angular",
+                        "iconType": "fab",
+                        "years": "1"
+                    }
+                ]
+            },
+            {
+                "group": "style-library",
+                "skills": [
+                    {
+                        "name": "Bootstrap",
+                        "icon": "bootstrap",
+                        "iconType": "fab",
+                        "years": "5"
+                    },
+                    {
+                        "name": "Angular Material",
+                        "icon": "caret-right",
+                        "iconType": "fas",
+                        "years": "5"
+                    },
+                    {
+                        "name": "Font Awesome",
+                        "icon": "font-awesome",
+                        "iconType": "fab",
+                        "years": "2"
+                    },
+                    {
+                        "name": "Prime NG",
+                        "icon": "caret-right",
+                        "iconType": "fas",
+                        "years": "2"
+                    }
+                ]
+            },
+            {
+                "group": "data-base",
+                "skills": [
+                    {
+                        "name": "My SQL",
+                        "icon": "database",
+                        "iconType": "fas",
+                        "years": "1"
+                    }
+                ]
+            },
+            {
+                "group": "version-control",
+                "skills": [
+                    {
+                        "name": "Git",
+                        "icon": "git-alt",
+                        "iconType": "fab",
+                        "years": "5"
+                    }
+                ]
+            },
+            {
+                "group": "methodology",
+                "skills": [
+                    {
+                        "name": "Agile",
+                        "years": "2",
+                        "icon": "arrows-split-up-and-left",
+                        "iconType": "fas"
+                    }
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "Mr Robot",
+                "resume": "label.projects.resume.MrRobot",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/mrrobot.jpg"
+            },
+            {
+                "title": "FilmaticK",
+                "resume": "label.projects.resume.filmatick",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/filmatick.jpg"
+            },
+            {
+                "title": "Angular Puzzle Jigsaw",
+                "resume": "label.projects.resume.puzzle",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/puzzle.jpg"
+            },
+            {
+                "title": "Trello",
+                "resume": "label.projects.resume.MrRobot",
+                "linkGitHub": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "link": "https://www.mediafire.com/file/2qwmtep6824uz7z/Mr_Robot_TFC.rar/file",
+                "thumbnail": "assets/img/projects/mrrobot.jpg"
+            }
+        ],
+        "config": {
+            "serviceID": "service_n4mpyjw",
+            "templateID": "template_4xosmer",
+            "userID": "1uWbbOo0LVF1DXLup"
+        }
+    }
+}

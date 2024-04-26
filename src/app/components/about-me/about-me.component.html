@@ -1,0 +1,163 @@
+<!-- #region About -->
+<section id="about" class="first-section">
+    <div class="container">
+        <h2 class="bar-title mb-5"><strong>{{ 'label.about.section.title.about' | translate }}</strong></h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 container-img">
+                <img [src]="img_profile" data-aos="fade-down-right" data-aos-delay="100" class="img-fluid photo">
+            </div>
+            <div class="col-lg-8 col-md-12 pt-4 pt-lg-0">
+                <h3 data-aos="fade-down-left" data-aos-delay="150" class="h3 about-title">{{ 'label.about.about.title' |
+                    translate }}
+                </h3>
+                <p data-aos="fade-left" data-aos-delay="150" class="font">{{ 'label.about.about.bio1' | translate }}</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="ul-dir-email-phone">
+                            <li *ngFor="let pd of personalData" data-aos="fade-down-right"
+                                [attr.data-aos-delay]="pd.delay">
+                                <fa-icon class="icons-data" [icon]="['fas', pd.icon]"></fa-icon>
+                                <strong>
+                                    <a *ngIf="pd.link" href="{{pd.link}}" class="{{pd.name}}">{{pd.data}}</a>
+                                    <span *ngIf="!pd.link" class="{{pd.name}}">{{pd.data | translate}}</span>
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p data-aos="fade-left" data-aos-delay="150" class="font">{{'label.about.about.bio2' | translate}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #endregion -->
+<!-- #region Experience -->
+<section id="experience">
+    <div class="container">
+        <h2><strong>{{ 'label.about.section.title.experience' | translate }}</strong></h2>
+        <span class="bar-title mb-5"></span>
+    </div>
+    <div class="cards-container">
+        <ul class="cards">
+            <li *ngFor="let exp of experiences, let i = index" [attr.data-aos]="getAosAnimationDownRightUpLeft(i)"
+                data-aos-delay="100" class="card">
+                <div class="card-img">
+                    <img [src]="exp.img">
+                </div>
+                <div class="experience-card-content">
+                    <h3 id="title">{{ exp.position | translate }}</h3>
+                    <p class="text-experience company">{{ exp.company | translate }}</p>
+                    <div class="content-experience d-flex align-items-center">
+                        <p class="text-experience location">{{ exp.place | translate }}</p>
+                        <p class="text-experience model">{{ exp.model | translate }}</p>
+                    </div>
+                    <div class="content-experience d-flex justify-content-start">
+                        <span class="date-experience">
+                            <fa-icon class="icon-date" [icon]="['fas', 'calendar-days']"></fa-icon>
+                            {{ exp.range | translate }}
+                        </span>
+                    </div>
+                    <a target="_blank" class="more" (click)="openModal(exp)">
+                        {{ 'label.about.experiences.read.more' | translate }}
+                        <fa-icon class="icon-more" [icon]="['fas', 'caret-right']"></fa-icon></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- #endregion -->
+<!-- #region Modal -->
+<div class="modal" *ngIf="showModal">
+    <div class="modal-content">
+        <div class="d-flex button-container">
+            <span class="close" (click)="closeModal()">&times;</span>
+        </div>
+        <div class="info-experience">
+            <h3>{{ selectedExperience.position | translate }}</h3>
+            <p class="text-experience company">{{ selectedExperience.company | translate }}</p>
+        </div>
+        <hr>
+        <p [innerHTML]="selectedExperience.description | translate"></p>
+    </div>
+</div>
+<!-- #endregion -->
+<!-- #region Studies -->
+<section id="studies">
+    <div class="container">
+        <h2><strong>{{ 'label.about.section.title.studies' | translate }}</strong></h2>
+        <span class="bar-title mb-5"></span>
+    </div>
+    <div class="cards-container">
+        <ul class="cards">
+            <li *ngFor="let st of studies, let i = index" [attr.data-aos]="getAosAnimationDownRightUpLeft(i)"
+                data-aos-delay="100" class="card">
+                <div class="card-img">
+                    <img [src]="st.img">
+                </div>
+                <div class="studies-card-content">
+                    <h3 class="h3" id="title">{{ st.title | translate }}</h3>
+                    <p class="school">{{ st.school | translate }}</p>
+                    <div class="content d-flex justify-content-start">
+                        <span class="date">
+                            <fa-icon class="icon-date" [icon]="['fas', 'calendar-days']"></fa-icon>
+                            {{ st.range | translate }}
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- #endregion -->
+<!-- #region Courses -->
+<section id="courses">
+    <div class="container">
+        <h2><strong>{{ 'label.about.section.title.courses' | translate }}</strong></h2>
+        <span class="bar-title mb-5"></span>
+    </div>
+    <div class="cards-container">
+        <ul class="cards">
+            <li *ngFor="let cs of courses, let i = index" [attr.data-aos]="getAosAnimationDownRightUpLeft(i)"
+                data-aos-delay="100" class="card">
+                <div class="card-img">
+                    <img [src]="cs.img">
+                </div>
+                <div class="studies-card-content">
+                    <h3 class="h3" id="title">{{ cs.title | translate }}</h3>
+                    <div class="content d-flex flex-column">
+                        <p class="school">{{ cs.school | translate }}</p>
+                        <span class="date">
+                            <fa-icon class="icon-date" [icon]="['fas', 'calendar-days']"></fa-icon>
+                            {{ cs.year| translate }}
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- #endregion -->
+<!-- #region Skills -->
+<section id="skills">
+    <div class="container">
+        <h2><strong>{{ 'label.about.section.title.skills' | translate }}</strong></h2>
+        <span class="bar-title mb-5"></span>
+    </div>
+    <div class="skills-group">
+        <div [attr.data-aos]="getAosAnimationDownUp(i)" data-aos-delay="100" class="col skills-content"
+            *ngFor="let group of skillsGroups, let i = index">
+            <h3 class="skills-title">{{ 'label.skills.' + group.group | translate }}</h3>
+            <div class="row skill-row">
+                <div class="col-6 skill-col" *ngFor="let skill of group.skills">
+                    <div class="skills-data">
+                        <fa-icon class="skill-icon" [icon]="[skill.iconType , skill.icon]"></fa-icon>
+                        <div>
+                            <h3 class="skills-name">{{ skill.name }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #endregion -->

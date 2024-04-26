@@ -1,0 +1,126 @@
+.first-section {
+    padding-top: 98px;
+    overflow: visible;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.projects-cards-container {
+    position: relative;
+    top: 2em;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 0 15px 30px var(--soft-black);
+    padding-top: 0.62em;
+    background-color: var(--home-background);
+    padding-bottom: 150px;
+}
+
+.my_swiper {
+    padding: 1.8em;
+}
+
+.project-card {
+    border-radius: 20px;
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
+    border: 1px solid var(--transparent-white);
+    overflow: hidden;
+    height: 320px;
+    margin-bottom: 2em;
+    list-style: none;
+    text-align: center;
+    transition: all .1s;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.project-card-header {
+    height: 190px;
+    transition: all 1s;
+    max-width: 100%;
+}
+
+.project-card-header>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.project-content {
+    padding: 10px 6px;
+}
+
+.title {
+    font-size: 30px;
+    color: var(--highlight-green);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px;
+    border: 2px solid var(--white);
+    border-radius: 20%;
+    background: transparent;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    border-color: var(--white);
+    background-color: var(--button-github-background);
+}
+
+.description-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(60% - 4%);
+    padding: 20px;
+    z-index: 5;
+    border-radius: 20px;
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
+    border: 1px solid var(--transparent-white);
+}
+
+@media only screen and (max-width: 560px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .projects-cards-container {
+        padding-bottom: 280px;
+    }
+
+    .description-container {
+        width: calc(100% - 4%);
+    }
+}

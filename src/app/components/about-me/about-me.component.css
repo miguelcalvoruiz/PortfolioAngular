@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.first-section {
+    padding-top: 98px;
+}
+
+.container-img {
+    align-content: center;
+}
+
+.photo {
+    border-radius: 32px;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--highlight-green);
+}
+
+.font {
+    font-size: calc(9px + .5vw);
+    font-family: 'Raleway', sans-serif;
+}
+
+.ul-dir-email-phone {
+    list-style-type: none;
+    font-size: calc(.6em + .5vw);
+}
+
+.email,
+.phone {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.icons-data {
+    font-size: calc(8px + .5vw);
+    color: var(--highlight-green);
+    width: 30px;
+    height: 30px;
+    background: var(--dark-gray);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    margin-right: 10px;
+    margin-bottom: .2em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 0;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    min-height: 130px;
+    list-style: none;
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
+    border: 1px solid var(--transparent-white);
+    margin: 1em 0;
+    transition: all .3s;
+}
+
+.card-img {
+    flex: 0 0 auto;
+    width: 150px;
+}
+
+.card-img>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.studies-card-content,
+.experience-card-content {
+    padding: 0.9em;
+    width: calc(100% - 130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-experience {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.experience-card-content h3,
+.info-experience h3 {
+    font-size: calc(18px + 0.5vw);
+    margin-bottom: 5px;
+    color: var(--highlight-green);
+}
+
+.studies-card-content h3 {
+    font-size: calc(10px + 0.5vw);
+    margin-bottom: 5px;
+    color: var(--highlight-green);
+}
+
+.school {
+    color: var(--white);
+    font-size: calc(8px + 0.5vw);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.company {
+    color: var(--white);
+    font-size: calc(12px + 0.5vw);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.location,
+.model {
+    color: var(--light-gray);
+    font-size: calc(7px + 0.5vw);
+    margin-bottom: 5px;
+}
+
+.more {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-size: calc(0.5em + 0.4vw);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25em;
+    cursor: pointer;
+}
+
+.more:hover .icon-more {
+    transform: translateX(0.25em);
+}
+
+.date,
+.date-experience {
+    font-size: calc(7px + 0.5vw);
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.icon-date {
+    position: relative;
+    top: .1em;
+    font-size: calc(.6em + .5vw);
+    transition: .3s;
+    margin-right: .5em;
+}
+
+.skills-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 0em 1em 0em;
+    align-items: stretch;
+}
+
+.skills-content {
+    border: 1px solid var(--transparent-white);
+    padding: 2rem 3rem;
+    border-radius: 1.25rem;
+    background: var(--very-transparent-white);
+    box-shadow: 0 15px 35px var(--soft-black);
+    margin-bottom: 1em;
+}
+
+.skill-row {
+    width: -webkit-fill-available;
+}
+
+.skills-title {
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--highlight-green);
+}
+
+.skills-data {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: baseline;
+}
+
+.skills-name {
+    font-size: calc(.6em + .3vw);
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.skill-icon {
+    color: var(--highlight-green);
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--soft-black);
+}
+
+.modal-content {
+    background-color: var(--gray);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--light-gray-hover);
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px var(--soft-black);
+}
+
+.button-container {
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+.close {
+    color: var(--light-gray-hover);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90vw;
+        min-height: auto;
+    }
+
+    .card-img {
+        width: auto;
+    }
+
+    .card-img>img {
+        height: 100%;
+        width: 80px;
+    }
+
+    .studies-card-content,
+    .experince-card-content {
+        width: auto;
+    }
+
+    .skills-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal-content {
+        background-color: var(--gray);
+        margin: 25% 5% auto;
+        height: 80%;
+        overflow: inherit;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .skills-group {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-content {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}

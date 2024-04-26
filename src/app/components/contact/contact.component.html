@@ -1,0 +1,74 @@
+<section id="contact">
+    <div  class="container">
+        <div data-aos="zoom-in-up" class="container">
+            <h2 class="bar-title mb-5"><strong>{{ 'label.projects.title' | translate }}</strong></h2>
+        </div>
+        <div  data-aos="fade-down-right" data-aos-delay="100" data-aos-anchor-placement="top-center" class="row contact-data">
+            <div class="col-md-4 col-lg-4 info-col">
+                <div class="profile-info">
+                    <img class="profile-img" [src]="img_profile">
+                    <h3 class="profile-name">
+                        <strong>Miguel Calvo Ruiz</strong>
+                    </h3>
+                    <p class="profile-description">{{ "label.contact.description" | translate }}</p>
+                    <div class="social-links">
+                        <ul class="ul-dir-email-phone">
+                            <li *ngFor="let pd of personalData">
+                                <fa-icon class="icons-data" [icon]="['fas', pd.icon]"></fa-icon>
+                                <strong>
+                                    <a *ngIf="pd.link" href="{{pd.link}}" class="{{pd.name}}">{{pd.data}}</a>
+                                    <span *ngIf="!pd.link" class="{{pd.name}}">{{pd.data | translate}}</span>
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+            <div  class="col-md-8 form-col">
+                <form #form="ngForm" class="form-contact" (ngSubmit)="sendEmail(form)">
+                    <div class="controls">
+                        <label class="control-label col-sm-3" for="name">{{'label.contact.name' | translate}} (*)</label>
+                        <div class="col-sm-10">
+                            <input id="name" name="name" type="text" placeholder="{{'label.contact.name' | translate}}" class="form-control" [(ngModel)]="formData.name" required>
+                        </div>
+                        <label class="control-label col-sm-3" for="email">{{'label.contact.email' | translate}} (*)</label>
+                        <div class="col-sm-10">
+                            <input id="email" name="email" type="email" placeholder="{{'label.contact.email' | translate}}"
+                            class="form-control" [(ngModel)]="formData.email" required>
+                        </div>
+    
+                        <label class="control-label col-sm-3" for="company">{{'label.contact.company' | translate}}</label>
+                        <div class="col-sm-10">
+                            <input id="company" name="company" type="text" placeholder="{{'label.contact.company' | translate}}"
+                            class="form-control" [(ngModel)]="formData.company">
+                        </div>
+    
+                        <label class="control-label col-sm-3" for="message">{{'label.contact.message' | translate}} (*)</label>
+                        <div class="col-sm-10">
+                            <textarea id="message" name="message" placeholder="{{'label.contact.message' | translate}}"
+                            class="form-control" rows="5" [(ngModel)]="formData.message" required></textarea>
+                        </div>
+                        
+                        <div  class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" [disabled]="form.invalid || showProgressBar" class="button">
+                                {{'label.contact.button.send' | translate}}
+                                <fa-icon [icon]="['far', 'paper-plane']"></fa-icon>
+                            </button>
+                        </div>
+                        <div *ngIf="showProgressBar" class="progress mt-3">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                [style.width]="progress + '%'" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div *ngIf="successAlertVisible" class="alert alert-success alert-dismissible fade show" role="alert">
+            {{'label.contact.success' | translate}}
+        </div>
+        
+        <div *ngIf="errorAlertVisible" class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{'label.contact.error' | translate}}
+        </div>
+    </div>
+</section>

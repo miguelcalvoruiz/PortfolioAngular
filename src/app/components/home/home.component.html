@@ -7,11 +7,20 @@
                     <p>&nbsp;<span class="gradient-text">{{text | translate}}</span></p>
                 </div>
             </div>
-            <div class="botton-container">
-                <a href="{{sn.link}}" class="button {{sn.name}}" data-aos="fade-right"
-                    data-aos-delay="100" target="_blank" *ngFor="let sn of socialNetworks">
-                    <fa-icon [icon]="['fab', sn.icon]"></fa-icon>
-                </a>
+            <div class="button-group">
+                <div class="button-container">
+                    <a href="{{sn.link}}" class="button {{sn.name}}" data-aos="fade-right"
+                        data-aos-delay="100" target="_blank" *ngFor="let sn of socialNetworks">
+                        <fa-icon [icon]="['fab', sn.icon]"></fa-icon>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a href="{{fileCV}}" class="button-cv" data-aos="fade-up"
+                        data-aos-delay="300" target="_blank" download>
+                        {{ "label.home.download" | translate }}
+                        <fa-icon [icon]="['fas', 'file']"></fa-icon>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

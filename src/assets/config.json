@@ -2,6 +2,7 @@
     "data": {
         "imgProfile": "assets/img/fotoCV.jpeg",
         "name": "Miguel Calvo Ruiz",
+        "fileCV": "assets/pdf/Miguel-Calvo-Ruiz-CV.pdf",
         "socialNetworks": [
             {
                 "name": "linkedin",
@@ -282,7 +283,6 @@
             }
         ],
         "config": {
-            "filenameCV": "CV-Miguel-Calvo-Ruiz.pdf",
             "serviceID": "service_n4mpyjw",
             "templateID": "template_4xosmer",
             "userID": "1uWbbOo0LVF1DXLup"

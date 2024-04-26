@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   isDeleting = false;
 
   public socialNetworks: SocialNetwork[] = [];
+  public fileCV: string = '';
 
   constructor(private translateService: TranslateService, private configService: ConfigService,) {
     this.typewrite();
@@ -25,6 +26,7 @@ export class HomeComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.socialNetworks = await this.configService.getConfigValue("data.socialNetworks");
+    this.fileCV = await this.configService.getConfigValue('data.fileCV');
   }
 
   typewrite() {

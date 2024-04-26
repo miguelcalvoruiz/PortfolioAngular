@@ -12,10 +12,41 @@
     text-align: center;
 }
 
-.button-container {
+.button-group {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.button-container {
+    width: 100%; /* Para que los botones tengan el ancho completo */
+}
+
+.button-cv {
+    padding: 8px 12px;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.button-cv:hover {
+    transform: translateY(-5px);
+    border-color: var(--white);
+    background-color: var(--highlight-green);
+}
+
 
 .button {
     width: 50px;
@@ -50,22 +81,30 @@
     background-color: var(--button-github-background);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 540px) {
+    .home {
+        background-image: url('/assets/img/home-bg-mobile.svg');
+    }
+
     .home-title {
-        font-size: 4.5vw;
+        font-size: 25px;
     }
 
     #typewriter {
-        font-size: 3.5vw;
+        font-size: 15px;
     }
 
     .button-container {
         flex-direction: column;
     }
-}
 
-@media only screen and (max-width: 540px) {
-    .home {
-        background-image: url('/assets/img/home-bg-mobile.svg');
+    .button {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .button-cv {
+        font-size: 13px;
     }
 }

@@ -13,10 +13,10 @@
                     <div class="project-content">
                         <h3 class="title">{{project.title}}</h3>
                         <div class="button-container">
-                            <a href="{{project.linkGitHub}}" class="button" target="_blank">
+                            <a *ngIf="project.linkGitHub" href="{{project.linkGitHub}}" class="button" target="_blank">
                                 <fa-icon [icon]="['fab', 'github']"></fa-icon>
                             </a>
-                            <a href="{{project.link}}" class="button" target="_blank">
+                            <a *ngIf="project.link" href="{{project.link}}" class="button" target="_blank">
                                 <fa-icon [icon]="['far', 'window-restore']"></fa-icon>
                             </a>
                         </div>

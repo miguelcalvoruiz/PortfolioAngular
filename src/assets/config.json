@@ -49,6 +49,12 @@
                 "school": "label.about.studies.school.uniovi",
                 "title": "label.about.studies.school.uniovi.title",
                 "img": "assets/img/studies/uniovi.jpg"
+            },
+            {
+                "range": "label.about.studies.school.afa.range",
+                "school": "label.about.studies.school.afa",
+                "title": "label.about.studies.school.afa.title",
+                "img": "assets/img/studies/afa.png"
             }
         ],
         "courses": [

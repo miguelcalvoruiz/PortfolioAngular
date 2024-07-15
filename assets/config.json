@@ -59,6 +59,24 @@
         ],
         "courses": [
             {
+                "year": "2024",
+                "title": "label.about.courses.title.full.stack",
+                "school": "Helsinki University - Full Stack Open",
+                "img": "assets/img/courses/fso.png"
+            },
+            {
+                "year": "2024",
+                "title": "label.about.courses.title.angular.spring.boot",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
+                "year": "2024",
+                "title": "label.about.courses.title.api.rest.php",
+                "school": "Udemy",
+                "img": "assets/img/courses/udemy.jpg"
+            },
+            {
                 "year": "2023",
                 "title": "label.about.courses.title.angular-aspnet",
                 "school": "Udemy",
@@ -192,6 +210,18 @@
                         "icon": "angular",
                         "iconType": "fab",
                         "years": "1"
+                    },
+                    {
+                        "name": "React",
+                        "icon": "react",
+                        "iconType": "fab",
+                        "years": "1"
+                    },
+                    {
+                        "name": "Sring Boot",
+                        "icon": "leaf",
+                        "iconType": "fas",
+                        "years": "1"
                     }
                 ]
             },
@@ -272,18 +302,18 @@
                 "thumbnail": "assets/img/projects/filmatick.jpg"
             },
             {
-                "title": "Angular Puzzle Jigsaw",
-                "resume": "label.projects.resume.puzzle",
-                "linkGitHub": "https://github.com/miguelcalvoruiz/angular-jigsaw-puzzle",
-                "link": "https://miguelcalvoruiz.github.io/angular-jigsaw-puzzle/",
-                "thumbnail": "assets/img/projects/puzzle.jpg"
-            },
-            {
                 "title": "wheatherTS",
                 "resume": "label.projects.resume.weatherTS",
                 "linkGitHub": "https://github.com/miguelcalvoruiz/weatherTS",
                 "link": "https://miguelcalvoruiz.github.io/weatherTS/",
                 "thumbnail": "assets/img/projects/weatherTS.jpg"
+            },
+            {
+                "title": "Angular Puzzle Jigsaw",
+                "resume": "label.projects.resume.puzzle",
+                "linkGitHub": "https://github.com/miguelcalvoruiz/angular-jigsaw-puzzle",
+                "link": "https://miguelcalvoruiz.github.io/angular-jigsaw-puzzle/",
+                "thumbnail": "assets/img/projects/puzzle.jpg"
             }
         ],
         "config": {

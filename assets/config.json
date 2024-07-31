@@ -314,6 +314,13 @@
                 "linkGitHub": "https://github.com/miguelcalvoruiz/angular-jigsaw-puzzle",
                 "link": "https://miguelcalvoruiz.github.io/angular-jigsaw-puzzle/",
                 "thumbnail": "assets/img/projects/puzzle.jpg"
+            },
+            {
+                "title": "Shopping Cart React",
+                "resume": "label.projects.resume.shopping.cart",
+                "linkGitHub": "https://github.com/miguelcalvoruiz/shopping-cart-app-shadcn",
+                "link": "https://miguelcalvoruiz.github.io/shopping-cart-app-shadcn/",
+                "thumbnail": "assets/img/projects/shopping-cart.jpg"
             }
         ],
         "config": {

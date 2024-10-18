@@ -55,6 +55,12 @@
                 "school": "label.about.studies.school.afa",
                 "title": "label.about.studies.school.afa.title",
                 "img": "assets/img/studies/afa.png"
+            },
+            {
+                "range": "label.about.studies.school.cifp.range",
+                "school": "label.about.studies.school.cifp",
+                "title": "label.about.studies.school.cifp.title",
+                "img": "assets/img/studies/cifp.jpg"
             }
         ],
         "courses": [

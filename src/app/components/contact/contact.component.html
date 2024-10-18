@@ -1,7 +1,7 @@
 <section id="contact">
     <div  class="container">
         <div data-aos="zoom-in-up" class="container">
-            <h2 class="bar-title mb-5"><strong>{{ 'label.projects.title' | translate }}</strong></h2>
+            <h2 class="bar-title mb-5"><strong>{{ 'label.contact.title' | translate }}</strong></h2>
         </div>
         <div  data-aos="fade-down-right" data-aos-delay="100" data-aos-anchor-placement="top-center" class="row contact-data">
             <div class="col-md-4 col-lg-4 info-col">
@@ -63,11 +63,11 @@
                 </form>
             </div>
         </div>
-        <div *ngIf="successAlertVisible" class="alert alert-success alert-dismissible fade show" role="alert">
+        <div *ngIf="successAlertVisible" class="alert alert-success alert-dismissible" role="alert">
             {{'label.contact.success' | translate}}
         </div>
         
-        <div *ngIf="errorAlertVisible" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <div *ngIf="errorAlertVisible" class="alert alert-danger alert-dismissible" role="alert">
             {{'label.contact.error' | translate}}
         </div>
     </div>

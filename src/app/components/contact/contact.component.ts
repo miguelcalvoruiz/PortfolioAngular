@@ -65,21 +65,29 @@ export class ContactComponent implements OnInit {
         console.error('Error al enviar el correo', error);
         this.progress = 80;
         clearInterval(intervalId);
-        this.showErrorAlert();
+        this.showErrorAlert()
       });
   }
 
   showSuccessAlert() {
-    this.successAlertVisible = true;
-    setTimeout(() => {
-      this.successAlertVisible = false;
-    }, 4000);
+    this.toggleAlert('successAlertVisible');
   }
 
   showErrorAlert() {
-    this.errorAlertVisible = true;
+    this.toggleAlert('errorAlertVisible');
+  }
+
+  private toggleAlert(alertType: 'successAlertVisible' | 'errorAlertVisible') {
+    this[alertType] = true;
     setTimeout(() => {
-      this.errorAlertVisible = false;
+      const alertElement = document.querySelector(`.${alertType === 'successAlertVisible' ? 'alert-success' : 'alert-danger'}`);
+      if (alertElement) {
+        alertElement.classList.add('fade-out');
+        alertElement.addEventListener('animationend', () => {
+          this[alertType] = false;
+          alertElement.classList.remove('fade-out');
+        }, { once: true });
+      }
     }, 4000);
   }
 }

@@ -39,6 +39,18 @@
         ],
         "studies": [
             {
+                "range": "label.about.studies.school.cifp.range",
+                "school": "label.about.studies.school.cifp",
+                "title": "label.about.studies.school.cifp.title",
+                "img": "assets/img/studies/cifp.jpg"
+            },
+            {
+                "range": "label.about.studies.school.afa.range",
+                "school": "label.about.studies.school.afa",
+                "title": "label.about.studies.school.afa.title",
+                "img": "assets/img/studies/afa.png"
+            },
+            {
                 "range": "label.about.studies.school.jjcm.range",
                 "school": "label.about.studies.school.jjcm",
                 "title": "label.about.studies.school.jjcm.title",
@@ -49,18 +61,6 @@
                 "school": "label.about.studies.school.uniovi",
                 "title": "label.about.studies.school.uniovi.title",
                 "img": "assets/img/studies/uniovi.jpg"
-            },
-            {
-                "range": "label.about.studies.school.afa.range",
-                "school": "label.about.studies.school.afa",
-                "title": "label.about.studies.school.afa.title",
-                "img": "assets/img/studies/afa.png"
-            },
-            {
-                "range": "label.about.studies.school.cifp.range",
-                "school": "label.about.studies.school.cifp",
-                "title": "label.about.studies.school.cifp.title",
-                "img": "assets/img/studies/cifp.jpg"
             }
         ],
         "courses": [
@@ -144,6 +144,15 @@
             }
         ],
         "experiences": [
+            {
+                "range": "label.about.experiences.i4life.range",
+                "company": "i4life",
+                "model": "label.about.experiences.presential",
+                "place": "Asturias",
+                "position": "label.about.experiences.web.development",
+                "description": "label.about.experiences.i4life.task",
+                "img": "assets/img/experience/i4life.jpg"
+            },
             {
                 "range": "label.about.experiences.clarcat.range",
                 "company": "Clarcat Cantabrico",

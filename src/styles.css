@@ -62,6 +62,20 @@ section {
   background: linear-gradient(to right, #7bfb92, #c15df3);
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 5px;
+}
+
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;

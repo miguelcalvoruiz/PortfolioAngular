@@ -45,8 +45,10 @@ export class HomeComponent implements OnInit {
     }, this.delay);
 
     if (!this.isDeleting && this.text === this.fullTranslatedText) {
-      this.isDeleting = true;
-      this.delay = 200;
+      setTimeout(() => {
+        this.isDeleting = true;
+        this.delay = 50;
+      }, 2000);
     } else if (this.isDeleting && this.text === '') {
       this.isDeleting = false;
       this.wordIndex++;

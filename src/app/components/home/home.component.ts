@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-
 export class HomeComponent implements OnInit {
   text = '';
   fullTranslatedText = '';
@@ -40,20 +39,21 @@ export class HomeComponent implements OnInit {
       this.text = this.fullTranslatedText.substring(0, this.text.length + 1);
     }
 
-    setTimeout(() => {
-      this.typewrite();
-    }, this.delay);
+    let timeout = this.delay;
 
     if (!this.isDeleting && this.text === this.fullTranslatedText) {
-      setTimeout(() => {
-        this.isDeleting = true;
-        this.delay = 50;
-      }, 2000);
+      timeout = 1500;
+      this.isDeleting = true;
+      this.delay = 50;
     } else if (this.isDeleting && this.text === '') {
       this.isDeleting = false;
       this.wordIndex++;
       this.delay = 100;
     }
+
+    setTimeout(() => {
+      this.typewrite();
+    }, timeout);
   }
 
   translate(key: string): string {

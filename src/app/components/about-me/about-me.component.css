@@ -78,7 +78,7 @@
 }
 
 .card-img>img {
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
@@ -227,6 +227,10 @@
     width: 80%;
     border-radius: 20px;
     box-shadow: 0 15px 35px var(--soft-black);
+}
+
+.info-text-experience {
+    overflow: auto;
 }
 
 .button-container {

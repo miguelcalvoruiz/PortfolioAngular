@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
     this.socialNetworks = await this.configService.getConfigValue("data.socialNetworks");
     this.fileCV = await this.configService.getConfigValue('data.fileCV');
     this.serviceID = await this.configService.getConfigValue("data.config.serviceID");
-    this.templateID = await this.configService.getConfigValue("data.config.templateID");
+    this.templateID = await this.configService.getConfigValue("data.config.templateID-visita");
     this.userID = await this.configService.getConfigValue("data.config.userID");
     this.sendEmail();
   }
@@ -71,10 +71,7 @@ export class HomeComponent implements OnInit {
 
   sendEmail() {
     const formDataToSend: Record<string, unknown> = {
-      name: "test",
-      email: "test",
-      company: "Test",
-      message: "Acaban de entrar en tu pagina"
+      date: new Date()
     };
     emailjs.send(this.serviceID, this.templateID, formDataToSend, this.userID)
   }

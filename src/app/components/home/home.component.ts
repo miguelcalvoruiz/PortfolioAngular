@@ -2,6 +2,7 @@ import { SocialNetwork } from '../../models/social-network';
 import { ConfigService } from '../../services/config/config.service';
 import { TranslateService } from './../../services/translate/translate.service';
 import { Component, OnInit } from '@angular/core';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,10 @@ export class HomeComponent implements OnInit {
   public socialNetworks: SocialNetwork[] = [];
   public fileCV: string = '';
 
+  public serviceID!: string;
+  public templateID!: string;
+  public userID!: string;
+
   constructor(private translateService: TranslateService, private configService: ConfigService,) {
     this.typewrite();
   }
@@ -26,6 +31,10 @@ export class HomeComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     this.socialNetworks = await this.configService.getConfigValue("data.socialNetworks");
     this.fileCV = await this.configService.getConfigValue('data.fileCV');
+    this.serviceID = await this.configService.getConfigValue("data.config.serviceID");
+    this.templateID = await this.configService.getConfigValue("data.config.templateID-visita");
+    this.userID = await this.configService.getConfigValue("data.config.userID");
+    this.sendEmail();
   }
 
   typewrite() {
@@ -59,4 +68,12 @@ export class HomeComponent implements OnInit {
   translate(key: string): string {
     return this.translateService.getTranslate(key);
   }
+
+  sendEmail() {
+    const formDataToSend: Record<string, unknown> = {
+      date: new Date()
+    };
+    emailjs.send(this.serviceID, this.templateID, formDataToSend, this.userID)
+  }
+  
 }

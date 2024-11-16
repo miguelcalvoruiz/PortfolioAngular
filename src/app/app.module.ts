@@ -17,6 +17,8 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { faAngular, faBootstrap, faCss3Alt, faFontAwesome, faGitAlt, faGithub, faHtml5, faJava, faJs, faLinkedinIn, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faArrowsSplitUpAndLeft, faCalendarDays, faCaretRight, faDatabase, faEnvelope, faFile, faHouse, faLeaf, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane, faWindowRestore } from '@fortawesome/free-regular-svg-icons';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 export function translateFactory(provider: TranslateService) {
   return () => provider.getData();
@@ -54,7 +56,14 @@ export function translateFactory(provider: TranslateService) {
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(library: FaIconLibrary) {
+  constructor(library: FaIconLibrary, router: Router) {
     library.addIcons(faGithub, faLinkedinIn, faHouse, faEnvelope, faPhoneVolume, faCalendarDays, faCaretRight, faHtml5, faCss3Alt, faJs, faJava, faPython, faAngular, faBootstrap, faFontAwesome, faDatabase, faGitAlt, faArrowsSplitUpAndLeft, faWindowRestore, faPaperPlane, faFile, faReact, faLeaf);
+    router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      (window as any).gtag('config', 'G-VDV5XSTK26', {
+        page_path: event.urlAfterRedirects
+      });
+    });
   }
 }

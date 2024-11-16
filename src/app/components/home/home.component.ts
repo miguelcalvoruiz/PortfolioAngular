@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     this.serviceID = await this.configService.getConfigValue("data.config.serviceID");
     this.templateID = await this.configService.getConfigValue("data.config.templateID-visita");
     this.userID = await this.configService.getConfigValue("data.config.userID");
-    this.sendEmail();
+    //this.sendEmail();
   }
 
   typewrite() {

@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     this.serviceID = await this.configService.getConfigValue("data.config.serviceID");
     this.templateID = await this.configService.getConfigValue("data.config.templateID-visita");
     this.userID = await this.configService.getConfigValue("data.config.userID");
-    //this.sendEmail();
+
   }
 
   typewrite() {
@@ -70,10 +70,21 @@ export class HomeComponent implements OnInit {
   }
 
   sendEmail() {
+    const dateTest = new Date();
+
+    const formattedDate = [
+      dateTest.getFullYear(),
+      String(dateTest.getMonth() + 1).padStart(2, '0'),
+      String(dateTest.getDate()).padStart(2, '0')
+    ].join('-') + ' ' + [
+      String(dateTest.getHours()).padStart(2, '0'),
+      String(dateTest.getMinutes()).padStart(2, '0'),
+      String(dateTest.getSeconds()).padStart(2, '0')
+    ].join(':');
     const formDataToSend: Record<string, unknown> = {
-      date: new Date()
+      date: formattedDate
     };
     emailjs.send(this.serviceID, this.templateID, formDataToSend, this.userID)
   }
-  
+
 }
